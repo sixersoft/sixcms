@@ -1,8 +1,8 @@
 /* ==========================================================================
-   Animations — GSAP এর সাথে মিলিয়ে ব্যবহৃত CSS স্টেট
+   Animations — CSS states used together with GSAP
    ========================================================================== */
 
-/* GSAP লোড হওয়ার আগে FOUC ঠেকাতে ইনিশিয়াল স্টেট */
+/* Initial state to avoid a flash before GSAP boots */
 [data-anim]:not(.is-ready) {
     opacity: 0;
 }
@@ -38,7 +38,7 @@
     }
 }
 
-/* অ্যাক্সেসিবিলিটি — মোশন কমানো থাকলে সব বন্ধ */
+/* Accessibility — disable everything when reduced motion is requested */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

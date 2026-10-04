@@ -8,7 +8,7 @@ use Illuminate\Contracts\View\View;
 class HomeController extends Controller
 {
     /**
-     * ফ্রন্টএন্ড হোম পেজ।
+     * Frontend home page.
      */
     public function index(): View
     {

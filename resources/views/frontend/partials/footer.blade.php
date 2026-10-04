@@ -1,8 +1,8 @@
 @php
     $columns = [
-        'প্রোডাক্ট'  => ['ফিচার' => '#features', 'প্রাইসিং' => '#pricing', 'ইন্টিগ্রেশন' => '#', 'চেঞ্জলগ' => '#'],
-        'রিসোর্স'   => ['ডকুমেন্টেশন' => '#', 'ব্লগ' => '#', 'গাইড' => '#', 'সাপোর্ট' => '#'],
-        'কোম্পানি'  => ['আমাদের সম্পর্কে' => '#', 'ক্যারিয়ার' => '#', 'যোগাযোগ' => '#', 'প্রাইভেসি' => '#'],
+        'Product'  => ['Features' => '#features', 'Pricing' => '#pricing', 'Integrations' => '#', 'Changelog' => '#'],
+        'Resources' => ['Documentation' => '#', 'Blog' => '#', 'Guides' => '#', 'Support' => '#'],
+        'Company'  => ['About' => '#', 'Careers' => '#', 'Contact' => '#', 'Privacy' => '#'],
     ];
 @endphp
 
@@ -19,7 +19,7 @@
                 </a>
 
                 <p class="mt-4 max-w-xs text-sm text-muted">
-                    Laravel 13, Tailwind CSS 4 ও GSAP দিয়ে তৈরি একটি আধুনিক, দ্রুতগতির কনটেন্ট প্ল্যাটফর্ম।
+                    A modern, high performance content platform built with Laravel 13, Tailwind CSS 4 and GSAP.
                 </p>
 
                 <div class="mt-6 flex gap-2">
@@ -47,10 +47,10 @@
         </div>
 
         <div class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-[var(--surface-border)] pt-8 text-sm text-muted sm:flex-row">
-            <p>&copy; {{ now()->year }} {{ config('app.name', 'SixCMS') }}। সর্বস্বত্ব সংরক্ষিত।</p>
+            <p>&copy; {{ now()->year }} {{ config('app.name', 'SixCMS') }}. All rights reserved.</p>
             <p class="flex items-center gap-2">
                 <i data-lucide="zap" class="text-accent-500"></i>
-                Laravel {{ app()->version() }} দিয়ে তৈরি
+                Built with Laravel {{ app()->version() }}
             </p>
         </div>
     </div>

@@ -5,10 +5,10 @@
 </head>
 
 <body class="min-h-dvh antialiased">
-    {{-- স্ক্রিন রিডার / কীবোর্ড ইউজারদের জন্য --}}
+    {{-- Accessibility: skip link for keyboard / screen reader users --}}
     <a href="#main"
        class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] btn btn-primary">
-        মূল কনটেন্টে যান
+        Skip to main content
     </a>
 
     @include('frontend.partials.header')

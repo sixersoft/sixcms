@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master', [
-    'title'       => 'হোম',
-    'description' => 'Laravel 13, Tailwind CSS 4, GSAP ও Lucide দিয়ে তৈরি একটি দ্রুতগতির, অ্যানিমেটেড ও SEO-বান্ধব ওয়েবসাইট টেমপ্লেট।',
+    'title'       => 'Home',
+    'description' => 'A fast, animated and SEO friendly website template built with Laravel 13, Tailwind CSS 4, GSAP and Lucide icons.',
 ])
 
 @section('content')
@@ -23,7 +23,7 @@
             "name": "{{ config('app.name', 'SixCMS') }}",
             "applicationCategory": "WebApplication",
             "operatingSystem": "Web",
-            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BDT" }
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
         }
     </script>
 @endpush

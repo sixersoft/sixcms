@@ -1,17 +1,17 @@
 @php
     $reviews = [
-        ['name' => 'আরিফুল ইসলাম', 'role' => 'ফুল-স্ট্যাক ডেভেলপার', 'text' => 'কোড স্ট্রাকচার এত পরিষ্কার যে নতুন সেকশন যোগ করতে মিনিটও লাগে না। GSAP ইন্টিগ্রেশনটা দুর্দান্ত।'],
-        ['name' => 'নুসরাত জাহান',  'role' => 'ইউআই ডিজাইনার',      'text' => 'থিম টোকেন বদলেই পুরো ব্র্যান্ড কালার পাল্টে ফেলেছি। ডিজাইনারের জন্য স্বপ্নের সেটআপ।'],
-        ['name' => 'তানভীর হাসান',  'role' => 'এজেন্সি ফাউন্ডার',    'text' => 'ক্লায়েন্ট সাইটের লোড টাইম অর্ধেকে নেমে এসেছে। পারফরম্যান্স স্কোর ৯৮-এর নিচে নামে না।'],
+        ['name' => 'Arif Islam',   'role' => 'Full-stack developer', 'text' => 'The structure is so clean that adding a new section takes less than a minute. The GSAP integration is brilliant.'],
+        ['name' => 'Nusrat Jahan', 'role' => 'UI designer',          'text' => 'I rebranded the entire site just by editing the theme tokens. A dream setup for designers.'],
+        ['name' => 'Tanvir Hasan', 'role' => 'Agency founder',       'text' => 'Our client sites load twice as fast now and the performance score never drops below 98.'],
     ];
 @endphp
 
 <section class="section border-y border-[var(--surface-border)] bg-[var(--surface-raised)]">
     <div class="container-page">
         <div class="mx-auto max-w-2xl text-center">
-            <span class="eyebrow" data-anim="fade-up"><i data-lucide="quote"></i> গ্রাহকের মতামত</span>
+            <span class="eyebrow" data-anim="fade-up"><i data-lucide="quote"></i> Testimonials</span>
             <h2 class="mt-5 font-display text-3xl font-semibold sm:text-4xl" data-anim="fade-up" data-anim-delay="0.05">
-                যারা ব্যবহার করছেন, <span class="text-gradient">তারা কী বলছেন</span>
+                What the people using it <span class="text-gradient">have to say</span>
             </h2>
         </div>
 
@@ -25,7 +25,7 @@
                     </div>
 
                     <blockquote class="mt-5 flex-1 text-[15px] leading-relaxed text-muted">
-                        “{{ $review['text'] }}”
+                        &ldquo;{{ $review['text'] }}&rdquo;
                     </blockquote>
 
                     <figcaption class="mt-6 flex items-center gap-3 border-t border-[var(--surface-border)] pt-5">

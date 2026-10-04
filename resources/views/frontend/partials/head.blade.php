@@ -1,8 +1,8 @@
 @php
-    $siteName   = config('app.name', 'SixCMS');
-    $metaTitle  = trim(($title ?? null) ? $title . ' — ' . $siteName : $siteName . ' — আধুনিক ওয়েবসাইট বানানোর প্ল্যাটফর্ম');
-    $metaDesc   = $description ?? 'Laravel 13, Tailwind CSS 4, GSAP ও Lucide দিয়ে তৈরি অতি দ্রুত, SEO-বান্ধব ও সুন্দর ওয়েবসাইট।';
-    $metaImage  = $ogImage ?? asset('og-image.jpg');
+    $siteName  = config('app.name', 'SixCMS');
+    $metaTitle = ($title ?? null) ? $title . ' — ' . $siteName : $siteName . ' — Build modern websites faster';
+    $metaDesc  = $description ?? 'A blazing fast, SEO friendly website starter built with Laravel 13, Tailwind CSS 4, GSAP and Lucide icons.';
+    $metaImage = $ogImage ?? asset('og-image.jpg');
 @endphp
 
 <meta charset="utf-8">
@@ -25,7 +25,7 @@
 {{-- Favicon --}}
 <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
 
-{{-- FOUC ছাড়া ডার্ক মোড (রেন্ডারের আগেই ক্লাস বসে যায়) --}}
+{{-- Dark mode without FOUC (applied before first paint) --}}
 <script>
     (() => {
         const t = localStorage.getItem('sixcms-theme')
@@ -35,7 +35,7 @@
     })();
 </script>
 
-{{-- Vite: CSS + JS (প্রোডাকশনে অটো preload + hash) --}}
+{{-- Vite: CSS + JS (auto preload + hashing in production) --}}
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 @stack('head')

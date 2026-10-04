@@ -1,7 +1,7 @@
 /**
  * Lucide Icons
- * শুধু ব্যবহৃত আইকনগুলো import করা হয়েছে যাতে bundle ছোট থাকে (tree-shaking)।
- * নতুন আইকন লাগলে নিচের অবজেক্টে যোগ করো এবং Blade-এ <i data-lucide="icon-name"></i> লেখো।
+ * Only the icons actually used are imported so the bundle stays small (tree-shaking).
+ * Need a new icon? Import it below, add it to the object, then use <i data-lucide="icon-name"></i> in Blade.
  */
 import {
     createIcons,

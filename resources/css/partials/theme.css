@@ -1,6 +1,6 @@
 /* ==========================================================================
-   Theme Tokens — সব রং, ফন্ট, শ্যাডো, রেডিয়াস এক জায়গায়
-   এখানে ভ্যালু বদলালেই পুরো সাইটের চেহারা বদলে যাবে।
+   Theme Tokens — every color, font, shadow and radius in one place.
+   Change a value here and the whole site updates.
    ========================================================================== */
 
 @theme {
@@ -58,7 +58,7 @@
     --container-page: 80rem;
 }
 
-/* সেমান্টিক ভেরিয়েবল — লাইট/ডার্ক দুই মোডে ম্যাপ করা */
+/* Semantic variables — mapped for both light and dark mode */
 :root {
     --surface: var(--color-ink-50);
     --surface-raised: #ffffff;
@@ -76,5 +76,5 @@
     --text-muted: var(--color-ink-400);
 }
 
-/* class ভিত্তিক ডার্ক মোড (Tailwind v4) */
+/* Class based dark mode (Tailwind v4) */
 @custom-variant dark (&:where(.dark, .dark *));

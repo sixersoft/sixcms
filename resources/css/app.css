@@ -2,7 +2,7 @@
 |--------------------------------------------------------------------------
 | SixCMS — Main Stylesheet (Tailwind CSS v4)
 |--------------------------------------------------------------------------
-| এটি শুধু এন্ট্রি পয়েন্ট। আসল স্টাইল partials/ ফোল্ডারে আলাদা করা আছে।
+| Entry point only. All real styles live in the partials/ folder.
 */
 
 @import 'tailwindcss';
@@ -12,7 +12,7 @@
 @import './partials/components.css';
 @import './partials/animations.css';
 
-/* Blade/Pagination ক্লাস স্ক্যান করার জন্য */
+/* Scan Blade & pagination views for class names */
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../views/**/*.blade.php';
 @source '../js/**/*.js';

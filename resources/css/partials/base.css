@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Base — গ্লোবাল এলিমেন্ট স্টাইল
+   Base — global element styles
    ========================================================================== */
 
 @layer base {
@@ -41,7 +41,7 @@
         border-radius: 4px;
     }
 
-    /* কাস্টম স্ক্রলবার */
+    /* Custom scrollbar */
     ::-webkit-scrollbar {
         width: 10px;
         height: 10px;
@@ -63,7 +63,7 @@
         background-clip: content-box;
     }
 
-    /* Lucide আইকন ডিফল্ট */
+    /* Lucide icon defaults */
     [data-lucide] svg,
     svg.lucide {
         width: 1.25em;

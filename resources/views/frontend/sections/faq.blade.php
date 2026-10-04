@@ -1,22 +1,22 @@
 @php
     $faqs = [
-        ['q' => 'এটি চালাতে কী কী লাগবে?',        'a' => 'PHP 8.3+, Composer এবং Node.js 20+। এরপর composer install ও npm install চালালেই হবে।'],
-        ['q' => 'রং বা ফন্ট কীভাবে বদলাব?',      'a' => 'resources/css/partials/theme.css ফাইলের @theme ব্লকে ভ্যালু পরিবর্তন করুন — পুরো সাইটে স্বয়ংক্রিয়ভাবে প্রয়োগ হবে।'],
-        ['q' => 'নতুন আইকন যোগ করা যাবে?',       'a' => 'হ্যাঁ। resources/js/modules/icons.js-এ Lucide থেকে আইকনটি import করে অবজেক্টে যোগ করুন, তারপর Blade-এ data-lucide="icon-name" লিখুন।'],
-        ['q' => 'অ্যানিমেশন বন্ধ করা যায়?',      'a' => 'ব্রাউজারের "reduce motion" সেটিং চালু থাকলে সব অ্যানিমেশন স্বয়ংক্রিয়ভাবে বন্ধ হয়ে যায়। চাইলে data-anim অ্যাট্রিবিউট মুছে দিলেই হবে।'],
-        ['q' => 'ডার্ক মোড কি অন্তর্ভুক্ত?',      'a' => 'হ্যাঁ, সিস্টেম প্রেফারেন্স অনুযায়ী অটো এবং হেডারের বাটন দিয়ে ম্যানুয়াল — পছন্দ localStorage-এ সংরক্ষিত থাকে।'],
+        ['q' => 'What do I need to run it?',        'a' => 'PHP 8.3+, Composer and Node.js 20+. Then simply run composer install and npm install.'],
+        ['q' => 'How do I change colors or fonts?', 'a' => 'Edit the @theme block in resources/css/partials/theme.css — the change is applied across the entire site automatically.'],
+        ['q' => 'Can I add more icons?',            'a' => 'Yes. Import the icon from Lucide in resources/js/modules/icons.js, add it to the object, then use data-lucide="icon-name" in your Blade markup.'],
+        ['q' => 'Can animations be disabled?',      'a' => 'All animations switch off automatically when the browser requests reduced motion. You can also simply remove the data-anim attribute.'],
+        ['q' => 'Is dark mode included?',           'a' => 'Yes — automatic based on system preference plus a manual toggle in the header, with the choice stored in localStorage.'],
     ];
 @endphp
 
 <section id="faq" class="section scroll-mt-24">
     <div class="container-page grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-            <span class="eyebrow" data-anim="left"><i data-lucide="chevron-down"></i> প্রশ্নোত্তর</span>
+            <span class="eyebrow" data-anim="left"><i data-lucide="chevron-down"></i> FAQ</span>
             <h2 class="mt-5 font-display text-3xl font-semibold sm:text-4xl" data-anim="left" data-anim-delay="0.05">
-                সাধারণ <span class="text-gradient">জিজ্ঞাসা</span>
+                Frequently asked <span class="text-gradient">questions</span>
             </h2>
             <p class="mt-4 text-muted" data-anim="left" data-anim-delay="0.1">
-                উত্তর খুঁজে না পেলে আমাদের সাথে যোগাযোগ করুন — ২৪ ঘণ্টার মধ্যে উত্তর পাবেন।
+                Can&rsquo;t find your answer? Get in touch and we&rsquo;ll reply within 24 hours.
             </p>
         </div>
 

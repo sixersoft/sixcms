@@ -2,10 +2,10 @@
     $brands = ['Laravel', 'Tailwind', 'GSAP', 'Lucide', 'Vite', 'Alpine', 'Livewire'];
 @endphp
 
-<section class="border-y border-[var(--surface-border)] py-10" aria-label="আমাদের প্রযুক্তি অংশীদার">
+<section class="border-y border-[var(--surface-border)] py-10" aria-label="Technologies we build on">
     <div class="container-page">
         <p class="text-center text-xs font-medium tracking-[0.2em] uppercase text-muted">
-            আধুনিক প্রযুক্তির ওপর নির্মিত
+            Built on modern technology
         </p>
 
         <div class="relative mt-7 overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_12%,#000_88%,transparent)]">

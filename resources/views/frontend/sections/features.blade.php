@@ -1,23 +1,23 @@
 @php
     $features = $features ?? [
-        ['icon' => 'zap',          'title' => 'বিদ্যুৎগতির পারফরম্যান্স', 'text' => 'Vite বিল্ড, ল্যাজি লোডিং ও অপ্টিমাইজড অ্যাসেট — প্রতিটি পেজ এক সেকেন্ডের মধ্যে লোড হয়।'],
-        ['icon' => 'layers',       'title' => 'পরিচ্ছন্ন কম্পোনেন্ট',     'text' => 'Blade লেআউট, পার্শিয়াল ও সেকশনে ভাগ করা কোড — যেকোনো অংশ আলাদাভাবে পরিবর্তনযোগ্য।'],
-        ['icon' => 'sparkles',     'title' => 'GSAP অ্যানিমেশন',          'text' => 'শুধু data-anim অ্যাট্রিবিউট দিলেই স্ক্রল রিভিল, কাউন্টার ও প্যারালাক্স চালু।'],
-        ['icon' => 'shield-check', 'title' => 'নিরাপত্তা অগ্রাধিকার',      'text' => 'CSRF, XSS সুরক্ষা ও Laravel 13-এর সর্বশেষ সিকিউরিটি ডিফল্ট সেটিংস।'],
-        ['icon' => 'globe',        'title' => 'SEO ও বহুভাষা প্রস্তুত',    'text' => 'Open Graph, canonical URL ও সেমান্টিক HTML — সার্চ ইঞ্জিনের জন্য আদর্শ।'],
-        ['icon' => 'rocket',       'title' => 'সহজ ডিপ্লয়',               'text' => 'এক কমান্ডে বিল্ড, যেকোনো হোস্টিং বা VPS-এ কয়েক মিনিটে লাইভ।'],
+        ['icon' => 'zap',          'title' => 'Lightning performance', 'text' => 'Vite builds, lazy loading and optimized assets keep every page under a second.'],
+        ['icon' => 'layers',       'title' => 'Clean components',      'text' => 'Blade layouts, partials and sections — change any piece in isolation.'],
+        ['icon' => 'sparkles',     'title' => 'GSAP animations',       'text' => 'Just add a data-anim attribute to get scroll reveals, counters and parallax.'],
+        ['icon' => 'shield-check', 'title' => 'Security first',        'text' => 'CSRF and XSS protection with the latest Laravel 13 security defaults.'],
+        ['icon' => 'globe',        'title' => 'SEO & i18n ready',      'text' => 'Open Graph tags, canonical URLs and semantic HTML out of the box.'],
+        ['icon' => 'rocket',       'title' => 'Effortless deploys',    'text' => 'One command to build, then ship to any host or VPS in minutes.'],
     ];
 @endphp
 
 <section id="features" class="section scroll-mt-24">
     <div class="container-page">
         <div class="mx-auto max-w-2xl text-center">
-            <span class="eyebrow" data-anim="fade-up"><i data-lucide="layers"></i> ফিচারসমূহ</span>
+            <span class="eyebrow" data-anim="fade-up"><i data-lucide="layers"></i> Features</span>
             <h2 class="mt-5 font-display text-3xl font-semibold sm:text-4xl" data-anim="fade-up" data-anim-delay="0.05">
-                একটি ওয়েবসাইটের জন্য যা যা দরকার, <span class="text-gradient">সবকিছুই এখানে</span>
+                Everything a website needs, <span class="text-gradient">already included</span>
             </h2>
             <p class="mt-4 text-muted" data-anim="fade-up" data-anim-delay="0.1">
-                শূন্য থেকে শুরু না করে, প্রোডাকশন-রেডি ভিত্তির ওপর আপনার প্রোজেক্ট গড়ুন।
+                Skip the blank page and build on a production ready foundation.
             </p>
         </div>
 

@@ -1,6 +1,6 @@
 /**
  * SixCMS — Main JS entry
- * প্রতিটি ফিচার আলাদা মডিউলে, এখানে শুধু বুটস্ট্র্যাপ।
+ * Every feature lives in its own module; this file only bootstraps them.
  */
 
 import { initIcons } from './modules/icons';

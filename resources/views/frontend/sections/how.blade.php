@@ -1,9 +1,9 @@
 @php
     $steps = [
-        ['no' => '০১', 'title' => 'প্রজেক্ট ইনস্টল করুন', 'text' => 'composer install ও npm install — এক মিনিটেই পরিবেশ প্রস্তুত।'],
-        ['no' => '০২', 'title' => 'থিম কাস্টমাইজ করুন',  'text' => 'theme.css-এ রঙ ও ফন্ট বদলান, পুরো সাইট সাথে সাথে আপডেট হবে।'],
-        ['no' => '০৩', 'title' => 'কনটেন্ট যোগ করুন',    'text' => 'Blade সেকশনে আপনার লেখা ও ছবি বসান, কোনো জটিলতা ছাড়াই।'],
-        ['no' => '০৪', 'title' => 'লাইভ করুন',           'text' => 'npm run build চালিয়ে সার্ভারে আপলোড — ব্যাস, সাইট প্রস্তুত।'],
+        ['no' => '01', 'title' => 'Install the project', 'text' => 'Run composer install and npm install — your environment is ready in a minute.'],
+        ['no' => '02', 'title' => 'Customize the theme', 'text' => 'Change colors and fonts in theme.css and the whole site updates instantly.'],
+        ['no' => '03', 'title' => 'Add your content',    'text' => 'Drop your copy and images into the Blade sections. No complexity involved.'],
+        ['no' => '04', 'title' => 'Go live',             'text' => 'Run npm run build, upload to your server and your site is online.'],
     ];
 @endphp
 
@@ -11,15 +11,15 @@
     <div class="container-page">
         <div class="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div class="lg:sticky lg:top-28">
-                <span class="eyebrow" data-anim="left"><i data-lucide="rocket"></i> কীভাবে কাজ করে</span>
+                <span class="eyebrow" data-anim="left"><i data-lucide="rocket"></i> How it works</span>
                 <h2 class="mt-5 font-display text-3xl font-semibold sm:text-4xl" data-anim="left" data-anim-delay="0.05">
-                    চারটি ধাপে <span class="text-gradient">লাইভ ওয়েবসাইট</span>
+                    From zero to a <span class="text-gradient">live website</span> in four steps
                 </h2>
                 <p class="mt-4 max-w-md text-muted" data-anim="left" data-anim-delay="0.1">
-                    জটিল কনফিগারেশন নয় — সহজ, স্পষ্ট ও পুনরাবৃত্তিযোগ্য একটি ওয়ার্কফ্লো।
+                    No complicated configuration — just a simple, clear and repeatable workflow.
                 </p>
                 <a href="#cta" class="btn btn-primary mt-8" data-anim="left" data-anim-delay="0.15">
-                    এখনই শুরু করুন <i data-lucide="arrow-right"></i>
+                    Get started now <i data-lucide="arrow-right"></i>
                 </a>
             </div>
 

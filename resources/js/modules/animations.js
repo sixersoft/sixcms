@@ -1,6 +1,6 @@
 /**
  * GSAP Animations
- * HTML-এ data-anim="fade-up|fade|zoom|left|right" দিলেই স্ক্রল-অ্যানিমেশন চালু হবে।
+ * Add data-anim="fade-up|fade|zoom|left|right" to any element to enable scroll animation.
  */
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -24,7 +24,7 @@ export function initAnimations() {
         return;
     }
 
-    /* ১. Hero — পেজ লোডেই চলবে */
+    /* 1. Hero — runs on page load */
     const hero = gsap.utils.toArray('[data-anim-hero]');
     if (hero.length) {
         gsap.set(hero, { opacity: 0, y: 40 });
@@ -32,7 +32,7 @@ export function initAnimations() {
         gsap.to(hero, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12, delay: 0.1 });
     }
 
-    /* ২. Scroll reveal */
+    /* 2. Scroll reveal */
     gsap.utils.toArray('[data-anim]').forEach((el) => {
         const from = PRESETS[el.dataset.anim] ?? PRESETS['fade-up'];
         const delay = parseFloat(el.dataset.animDelay ?? 0);
@@ -54,7 +54,7 @@ export function initAnimations() {
         );
     });
 
-    /* ৩. Counter */
+    /* 3. Counter */
     gsap.utils.toArray('[data-count]').forEach((el) => {
         const target = parseFloat(el.dataset.count);
         const obj = { v: 0 };
@@ -71,7 +71,7 @@ export function initAnimations() {
         });
     });
 
-    /* ৪. Parallax */
+    /* 4. Parallax */
     gsap.utils.toArray('[data-parallax]').forEach((el) => {
         gsap.to(el, {
             yPercent: parseFloat(el.dataset.parallax ?? -12),
