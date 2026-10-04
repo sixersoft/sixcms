@@ -4,7 +4,8 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "preview": "vite build && node tools/preview.mjs && npx --yes http-server public/preview -p 8080 -a 0.0.0.0 -c-1"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
