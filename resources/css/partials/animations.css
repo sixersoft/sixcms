@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Animations — GSAP এর সাথে মিলিয়ে ব্যবহৃত CSS স্টেট
+   ========================================================================== */
+
+/* GSAP লোড হওয়ার আগে FOUC ঠেকাতে ইনিশিয়াল স্টেট */
+[data-anim]:not(.is-ready) {
+    opacity: 0;
+}
+
+.marquee {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    animation: marquee 28s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.float {
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-14px);
+    }
+}
+
+/* অ্যাক্সেসিবিলিটি — মোশন কমানো থাকলে সব বন্ধ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    [data-anim] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}

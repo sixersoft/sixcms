@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Theme Tokens — সব রং, ফন্ট, শ্যাডো, রেডিয়াস এক জায়গায়
+   এখানে ভ্যালু বদলালেই পুরো সাইটের চেহারা বদলে যাবে।
+   ========================================================================== */
+
+@theme {
+    /* ---- Font families ---- */
+    --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --font-display: 'Clash Display', 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    /* ---- Brand palette ---- */
+    --color-brand-50: oklch(0.971 0.021 263);
+    --color-brand-100: oklch(0.936 0.043 263);
+    --color-brand-200: oklch(0.879 0.082 263);
+    --color-brand-300: oklch(0.804 0.125 263);
+    --color-brand-400: oklch(0.713 0.168 263);
+    --color-brand-500: oklch(0.633 0.198 263);
+    --color-brand-600: oklch(0.556 0.205 263);
+    --color-brand-700: oklch(0.472 0.178 263);
+    --color-brand-800: oklch(0.395 0.142 263);
+    --color-brand-900: oklch(0.331 0.108 263);
+    --color-brand-950: oklch(0.228 0.075 263);
+
+    /* ---- Accent (CTA / highlight) ---- */
+    --color-accent-400: oklch(0.845 0.158 86);
+    --color-accent-500: oklch(0.787 0.172 73);
+    --color-accent-600: oklch(0.702 0.175 56);
+
+    /* ---- Neutral / surface ---- */
+    --color-ink-50: oklch(0.985 0.002 265);
+    --color-ink-100: oklch(0.961 0.004 265);
+    --color-ink-200: oklch(0.917 0.006 265);
+    --color-ink-300: oklch(0.843 0.008 265);
+    --color-ink-400: oklch(0.676 0.012 265);
+    --color-ink-500: oklch(0.536 0.014 265);
+    --color-ink-600: oklch(0.432 0.015 265);
+    --color-ink-700: oklch(0.356 0.015 265);
+    --color-ink-800: oklch(0.265 0.015 265);
+    --color-ink-900: oklch(0.197 0.015 265);
+    --color-ink-950: oklch(0.136 0.015 265);
+
+    /* ---- Semantic ---- */
+    --color-success: oklch(0.72 0.17 152);
+    --color-warning: oklch(0.80 0.16 85);
+    --color-danger: oklch(0.63 0.21 25);
+
+    /* ---- Radius / shadow / easing ---- */
+    --radius-card: 1.25rem;
+    --radius-pill: 9999px;
+
+    --shadow-soft: 0 1px 2px oklch(0 0 0 / 0.04), 0 8px 24px oklch(0 0 0 / 0.06);
+    --shadow-glow: 0 18px 60px -18px var(--color-brand-500);
+
+    --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* ---- Layout ---- */
+    --container-page: 80rem;
+}
+
+/* সেমান্টিক ভেরিয়েবল — লাইট/ডার্ক দুই মোডে ম্যাপ করা */
+:root {
+    --surface: var(--color-ink-50);
+    --surface-raised: #ffffff;
+    --surface-border: var(--color-ink-200);
+    --text-primary: var(--color-ink-950);
+    --text-muted: var(--color-ink-500);
+}
+
+.dark,
+:root:has(#theme-toggle:checked) {
+    --surface: var(--color-ink-950);
+    --surface-raised: var(--color-ink-900);
+    --surface-border: var(--color-ink-800);
+    --text-primary: var(--color-ink-50);
+    --text-muted: var(--color-ink-400);
+}
+
+/* class ভিত্তিক ডার্ক মোড (Tailwind v4) */
+@custom-variant dark (&:where(.dark, .dark *));

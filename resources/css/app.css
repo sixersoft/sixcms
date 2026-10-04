@@ -1,9 +1,18 @@
+/*
+|--------------------------------------------------------------------------
+| SixCMS — Main Stylesheet (Tailwind CSS v4)
+|--------------------------------------------------------------------------
+| এটি শুধু এন্ট্রি পয়েন্ট। আসল স্টাইল partials/ ফোল্ডারে আলাদা করা আছে।
+*/
+
 @import 'tailwindcss';
+@import './partials/fonts.css';
+@import './partials/theme.css';
+@import './partials/base.css';
+@import './partials/components.css';
+@import './partials/animations.css';
 
+/* Blade/Pagination ক্লাস স্ক্যান করার জন্য */
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+@source '../views/**/*.blade.php';
+@source '../js/**/*.js';

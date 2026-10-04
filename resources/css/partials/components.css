@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Components — রিইউজেবল ইউটিলিটি ক্লাস
+   ========================================================================== */
+
+@layer components {
+    .container-page {
+        width: 100%;
+        max-width: var(--container-page);
+        margin-inline: auto;
+        padding-inline: 1.25rem;
+    }
+
+    @media (min-width: 1024px) {
+        .container-page {
+            padding-inline: 2rem;
+        }
+    }
+
+    /* ---- Buttons ---- */
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border-radius: var(--radius-pill);
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        font-size: 0.9375rem;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: transform 0.25s var(--ease-smooth), background-color 0.25s, color 0.25s, box-shadow 0.25s;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .btn:active {
+        transform: translateY(0);
+    }
+
+    .btn-primary {
+        background-color: var(--color-brand-600);
+        color: #fff;
+        box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--color-brand-700);
+        box-shadow: 0 18px 40px -18px var(--color-brand-600);
+    }
+
+    .btn-accent {
+        background-color: var(--color-accent-500);
+        color: var(--color-ink-950);
+    }
+
+    .btn-accent:hover {
+        background-color: var(--color-accent-400);
+    }
+
+    .btn-ghost {
+        background-color: transparent;
+        color: var(--text-primary);
+        border: 1px solid var(--surface-border);
+    }
+
+    .btn-ghost:hover {
+        background-color: color-mix(in oklab, var(--color-brand-500) 10%, transparent);
+        border-color: var(--color-brand-500);
+    }
+
+    /* ---- Surfaces ---- */
+    .card {
+        background-color: var(--surface-raised);
+        border: 1px solid var(--surface-border);
+        border-radius: var(--radius-card);
+        padding: 1.75rem;
+        box-shadow: var(--shadow-soft);
+        transition: transform 0.35s var(--ease-smooth), border-color 0.35s, box-shadow 0.35s;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+        border-color: color-mix(in oklab, var(--color-brand-500) 45%, transparent);
+    }
+
+    /* ---- Typography helpers ---- */
+    .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: var(--radius-pill);
+        border: 1px solid var(--surface-border);
+        padding: 0.375rem 0.875rem;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+    }
+
+    .text-gradient {
+        background-image: linear-gradient(
+            100deg,
+            var(--color-brand-500),
+            var(--color-accent-500) 55%,
+            var(--color-brand-400)
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .section {
+        padding-block: clamp(4rem, 9vw, 7.5rem);
+    }
+
+    /* ---- Decorative ---- */
+    .grid-backdrop {
+        background-image: linear-gradient(var(--surface-border) 1px, transparent 1px),
+            linear-gradient(90deg, var(--surface-border) 1px, transparent 1px);
+        background-size: 64px 64px;
+        mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 35%, transparent 75%);
+    }
+
+    .blob {
+        position: absolute;
+        border-radius: 9999px;
+        filter: blur(80px);
+        opacity: 0.35;
+        pointer-events: none;
+    }
+}
+
+/* ==========================================================================
+   Utilities — ভ্যারিয়েন্ট (hover:, dark:, [&.is-stuck]:) সাপোর্ট করে
+   ========================================================================== */
+
+@utility glass {
+    background-color: color-mix(in oklab, var(--surface-raised) 72%, transparent);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+}
+
+@utility text-muted {
+    color: var(--text-muted);
+}
+
+@utility surface {
+    background-color: var(--surface-raised);
+}
+
+@utility border-line {
+    border-color: var(--surface-border);
+}

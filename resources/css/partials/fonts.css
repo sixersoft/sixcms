@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Fonts — লোকাল ভ্যারিয়েবল ফন্ট (Vite নিজে হ্যাশ করে public/build এ নিয়ে যাবে)
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../../fonts/ClashDisplay-Variable.woff2') format('woff2-variations');
+    font-weight: 200 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/DMSans-Variable.woff2') format('woff2-variations');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/DMSans-Italic-Variable.woff2') format('woff2-variations');
+    font-weight: 100 1000;
+    font-style: italic;
+    font-display: swap;
+}
